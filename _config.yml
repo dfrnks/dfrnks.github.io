@@ -1,0 +1,10 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://frnks.github.io
+title: Awesome
+email: douglasfrancardoso@gmail.com
+author: frnks
+description: My awesome new site
+paginate: 5
+google_analytics: UA-84126815-1
