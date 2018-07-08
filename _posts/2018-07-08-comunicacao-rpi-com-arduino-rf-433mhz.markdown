@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Comunicação RPI com o Arduino via RF 433 mhz 
 layout: post
 Examplos: https://guides.github.com/features/mastering-markdown/
@@ -37,7 +37,25 @@ tx.cancel()
 pi.stop()
 ```
 
-### Código arduino
+### Esquema RPI transmissor
+A ligação é extremamente simples, pois o bichinho tem só 3 pernas. 
+
+![transmissor_rf](/img/posts/2018-07-08/transmissor_rf.jpg)
+
+Se a distancia for pequena, tipo alguns metros não é necessário antena para comunicar. 
+
+Primeira coisa, ligue o GND (Terra) do transmissor ao pino Ground do RPI (Pino 6 por exemplo), após ligue  o pino do 3.3v fo RPI (Pino 1) ao pino VCC do trasmissor. 
+
+Então é so ligar o pino DATA do transmissor ao pino do GPIO, no nosso caso ao Pino GPIO18 (Ou pino 12). 
+
+Pronto, a ligação está feita. 
+
+![esquema_rpi_transmissor_rf](/img/posts/2018-07-08/esquema_rpi_transmissor_rf.jpg)
+
+Caso tenha duvidas das pinagens do RPI pode verificar [aqui](/2018/07/08/esquemas-portas-rpi.html)
+
+
+### Código arduino do receptor
 
 No arduino receberemos a mensagem e iremos escrever a mesma via comunicação serial, você poderia exibir num display por exemplo, ou talvez executar algum comando, como ligar um led, acionar um motor, etc.
 Aqui para podermos nos comunicar será utilizar a lib externa [VirtualWire](http://www.airspayce.com/mikem/arduino/VirtualWire/VirtualWire-1.20.zip)
@@ -89,3 +107,18 @@ void loop()
   }
 }
 ```
+Você pode encontrar mais funções para utilizar na documentação do VirtualWire [aqui](https://arduino-info.wikispaces.com/file/view/VirtualWire.pdf)
+
+### Esquema arduino recptor
+
+Aqui também a conexão é bem simples, o bichino do recpetor tem 4 pernas, na só 3 funções, já que duas pernas tem a mesma função. 
+
+![receptor_rf_2.jpg](/img/posts/2018-07-08/receptor_rf_2.jpg)
+![receptor_rf_1.jpg](/img/posts/2018-07-08/receptor_rf_1.jpg)
+
+O GND (Terra) ligue no GND do arduino, e o VCC ligue nos 5v (5 volts) do arduino e qualquer um dos dos DATA ligue no DP (Digital port) do Arduino, no nosso caso foi na porta 5. 
+
+![esquema_arduino_receptor_rf.jpg](/img/posts/2018-07-08/esquema_arduino_receptor_rf.jpg)
+
+Para ver a saida na serial, utilize o monitor serial do Arduino IDE. 
+
