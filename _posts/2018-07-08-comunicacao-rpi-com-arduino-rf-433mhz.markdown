@@ -7,7 +7,7 @@ Examplos: https://guides.github.com/features/mastering-markdown/
 
 Para poder se comunicar tanto arduino com o arduino via RF ou Raspberry com arduino ou vice-versa, até que é um pouquinho simples. É necessário algumas coisas como o Módulo de RF transmissor e receptor 433 MHZ, como os da imagens abaixo.
 
-![pi3 gpio](/img/posts/rf_433mhz.png)
+![pi3 gpio](/img/posts/rf_433mhz.jpg)
 
 Um arduino e um RPI, obviámente. 
 
@@ -52,13 +52,13 @@ Pronto, a ligação está feita.
 
 ![esquema_rpi_transmissor_rf](/img/posts/2018-07-08/esquema_rpi_transmissor_rf.jpg)
 
-Caso tenha duvidas das pinagens do RPI pode verificar [aqui](/2018/07/08/esquemas-portas-rpi.html)
+Caso tenha duvidas das pinagens do RPI pode verificar [aqui](/2018/07/08/esquemas-portas-rpi.html){:target="_blank"}
 
 
 ### Código arduino do receptor
 
 No arduino receberemos a mensagem e iremos escrever a mesma via comunicação serial, você poderia exibir num display por exemplo, ou talvez executar algum comando, como ligar um led, acionar um motor, etc.
-Aqui para podermos nos comunicar será utilizar a lib externa [VirtualWire](http://www.airspayce.com/mikem/arduino/VirtualWire/VirtualWire-1.20.zip)
+Aqui para podermos nos comunicar será utilizar a lib externa [VirtualWire](http://www.airspayce.com/mikem/arduino/VirtualWire/VirtualWire-1.20.zip){:target="_blank"}
 ```c
 #include <VirtualWire.h>
 
@@ -107,11 +107,11 @@ void loop()
   }
 }
 ```
-Você pode encontrar mais funções para utilizar na documentação do VirtualWire [aqui](https://arduino-info.wikispaces.com/file/view/VirtualWire.pdf)
+Você pode encontrar mais funções para utilizar na documentação do VirtualWire [aqui](https://arduino-info.wikispaces.com/file/view/VirtualWire.pdf){:target="_blank"}
 
 ### Esquema arduino recptor
 
-Aqui também a conexão é bem simples, o bichino do recpetor tem 4 pernas, na só 3 funções, já que duas pernas tem a mesma função. 
+Aqui também a conexão é bem simples, o bichino do recpetor tem 4 pernas, mas só 3 funções, já que duas pernas tem a mesma função. 
 
 ![receptor_rf_2.jpg](/img/posts/2018-07-08/receptor_rf_2.jpg)
 ![receptor_rf_1.jpg](/img/posts/2018-07-08/receptor_rf_1.jpg)
