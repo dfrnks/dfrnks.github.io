@@ -1,10 +1,10 @@
 excerpt_separator: ""
 pygments: true
 markdown: kramdown
-url: http://frnks.github.io
-title: Awesome
+url: http://dfrnks.github.io
+title: MPBrain
 email: douglasfrancardoso@gmail.com
-author: frnks
-description: My awesome new site
-paginate: 5
+author: dfrnks
+description: My personal brain
+paginate: 10
 google_analytics: UA-84126815-1
