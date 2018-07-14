@@ -59,8 +59,10 @@ body {
 .site-header{
   background-image: url(https://dfrnks.github.io/img/fundo.png);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   height: 228px;
+  background-color: #707271;
 }
 
 .site-header a {
