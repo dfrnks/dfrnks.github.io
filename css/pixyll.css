@@ -56,9 +56,17 @@ body {
   width: 100%;
 }
 
+.site-header{
+  background-image: url(https://dfrnks.github.io/img/fundo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 228px;
+}
+
 .site-header a {
-  color: #333;
+  color: #fff;
   font-weight: 300;
+  margin-top: 33px;
 }
 
 .site-header nav a {
