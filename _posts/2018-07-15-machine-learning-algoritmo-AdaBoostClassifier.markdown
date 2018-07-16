@@ -64,6 +64,7 @@ Existe 4 parâmetros os mais importantes são base_estimator, n_estimators, and 
 - **loss**: È exclusivo da AdaBoostRegressor e define a função de perda para usar ao atualizar pesos. Por padrão, será utilizadao a função de perda linear, pode ser alterada para quadrada ou exponencial.
 
 Fontes:
+
 [http://mccormickml.com/2013/12/13/adaboost-tutorial/](http://mccormickml.com/2013/12/13/adaboost-tutorial/)
 [https://medium.com/machine-learning-101/https-medium-com-savanpatel-chapter-6-adaboost-classifier-b945f330af06](https://medium.com/machine-learning-101/https-medium-com-savanpatel-chapter-6-adaboost-classifier-b945f330af06)
 [https://chrisalbon.com/machine_learning/trees_and_forests/adaboost_classifier/](https://chrisalbon.com/machine_learning/trees_and_forests/adaboost_classifier/)
