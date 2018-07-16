@@ -54,7 +54,7 @@ dump(model, open(filename, 'wb'))
 loaded_model = load(open('binary_class_model.sav', 'rb'))
 
 ```
-####Parâmetros do AdaBoost Classifier
+#### Parâmetros do AdaBoost Classifier
 
 Existe 4 parâmetros os mais importantes são base_estimator, n_estimators, and learning_rate.
 
