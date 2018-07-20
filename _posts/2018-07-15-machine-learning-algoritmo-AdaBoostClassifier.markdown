@@ -71,7 +71,7 @@ Existe 4 parâmetros os mais importantes são base_estimator, n_estimators, and 
 - **base_estimator**: É o algoritmo utilizado para treinar os modelos fracos. O padrão é a arvore de decisão, a não ser que queira algo especifico, isso não precisa ser alterado.
 - **n_estimators**: É o número de modelos que ele vai utilizar para o treino.
 - **learning_rate**: É a taxa de aprendizado, um valor muito baixo demorará mais, mas as vezes com melhor resultado
-- **loss**: È exclusivo da AdaBoostRegressor e define a função de perda para usar ao atualizar pesos. Por padrão, será utilizadao a função de perda linear, pode ser alterada para quadrada ou exponencial.
+- **loss**: É exclusivo da AdaBoostRegressor e define a função de perda para usar ao atualizar pesos. Por padrão, será utilizadao a função de perda linear, pode ser alterada para quadrada ou exponencial.
 
 Fontes:
 
