@@ -54,6 +54,16 @@ dump(model, open(filename, 'wb'))
 loaded_model = load(open('binary_class_model.sav', 'rb'))
 
 ```
+    [[14  0  0]
+     [ 0 11  3]
+     [ 0  1  9]]
+                 precision    recall  f1-score   support
+              0       1.00      1.00      1.00        14
+              1       0.92      0.79      0.85        14
+              2       0.75      0.90      0.82        10
+    avg / total       0.90      0.89      0.90        38
+
+
 #### Parâmetros do AdaBoost Classifier
 
 Existe 4 parâmetros os mais importantes são base_estimator, n_estimators, and learning_rate.
